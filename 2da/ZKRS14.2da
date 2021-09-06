@@ -1,0 +1,3 @@
+STEP_SIZE PIVOT_VALUE TARGET CHANGE_PER_STEP STAT_LOWER_LIMIT STAT_UPPER_LIMIT STAT PARAMETER_TO_SCALE 
+3         10          9      6              1                 25               WIS  DURATION
+2         16          9      -1             1                 25               INT  SAVING_THROW

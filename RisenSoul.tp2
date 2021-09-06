@@ -1,0 +1,937 @@
+   
+BACKUP ~RisenSoul/backup~
+AUTHOR ~Arunsun~
+    VERSION ~1.1~
+LANGUAGE ~English~  ~english~ ~RisenSoul/english/EN.tra~
+
+
+
+BEGIN @1
+CLEAR_EVERYTHING
+INCLUDE ~%MOD_FOLDER%/fl#add_kit_ee.tpa~
+INCLUDE ~%MOD_FOLDER%/ScaleSpell.TPA~
+
+COPY ~RisenSoul/2da/LUZKRS.2da~ override
+COPY ~RisenSoul/2da/ZKCLABRS.2da~ override
+
+ADD_KIT ~ZKRS~
+    ~ZKRS 1 1 1 1 1 1 1 1~
+    ~ZKRS 0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    ~ZKRS 0 0 0 0 0 0~
+    ~ZKRS -2 0 -2 0 0 0~
+    ~ZKRS 0 0 0 0 0 0~
+    ~ZKRS 0 0 0 0 0 0~
+    ~ZKRS 1 1 1 0 0 0 0 0 0~
+    ~ZKRS 0 0 0 0 0 0~
+    ~RisenSoul/2da/ZKCLABRS.2da~
+    ~K_MN_H~
+    ~0x00004000 20~
+    ~ZKRS~
+    ~* * * BAG28 * * * BOOT01 AMUL17 * * AROW11,80 * * * * * DAGG12 SW1H28 *~    
+    SAY @2
+    SAY @2
+    SAY @3
+    
+    LAF fl#add_kit_ee
+    INT_VAR
+        biography = 29492
+        briefdesc = RESOLVE_STR_REF (@4)
+        fallen = 0
+        fallen_notice = RESOLVE_STR_REF (@5)
+    STR_VAR
+        kit_name = ~ZKRS~
+        clswpbon = ~1 0 3~
+        numwslot = ~2~
+        clascolr = ~35 67 67 25 80~
+        clasiskl = ~0 0 0 0 0 0 0~
+        hpclass = ~HPMONK~
+        clsrcreq = ~1 1 1 1 1 1 1~
+        clasthac = ~0~
+    END
+
+COPY ~RisenSoul/spl/ZKRSPA.spl~ override
+    SAY 0x8 @6
+    SAY 0xc @6
+    SAY 0x54 @7
+    SAY 0x50 @7  
+
+COPY ~RisenSoul/spl/ZKRSHA01.spl~ override
+    SAY 0x8 @8
+    SAY 0xc @8
+    SAY 0x54 @9
+    SAY 0x50 @9
+
+COPY ~RisenSoul/spl/ZKRSHA02.spl~ override
+    SAY 0x8 @10
+    SAY 0xc @10
+    SAY 0x54 @11
+    SAY 0x50 @11
+
+COPY ~RisenSoul/spl/ZKRSHA03.spl~ override
+    SAY 0x8 @12
+    SAY 0xc @12
+    SAY 0x54 @13
+    SAY 0x50 @13
+
+COPY ~RisenSoul/spl/ZKRSHA04.spl~ override
+    SAY 0x8 @14
+    SAY 0xc @14
+    SAY 0x54 @15
+    SAY 0x50 @15
+
+COPY ~RisenSoul/spl/ZKRSHA05.spl~ override
+    SAY 0x8 @16
+    SAY 0xc @16
+    SAY 0x54 @9
+    SAY 0x50 @9
+
+
+COPY ~RisenSoul/spl/ZKRSHA06.spl~ override
+    SAY 0x8 @17
+    SAY 0xc @17
+    SAY 0x54 @11
+    SAY 0x50 @11
+
+COPY ~RisenSoul/spl/ZKRSHA07.spl~ override
+    SAY 0x8 @18
+    SAY 0xc @18
+    SAY 0x54 @19
+    SAY 0x50 @19
+        
+COPY ~RisenSoul/spl/ZKRSHA08.spl~ override
+    SAY 0x8 @20
+    SAY 0xc @20
+    SAY 0x54 @21
+    SAY 0x50 @21
+
+COPY ~RisenSoul/spl/ZKRSHA09.spl~ override
+    SAY 0x8 @22
+    SAY 0xc @22
+    SAY 0x54 @13
+    SAY 0x50 @13
+
+COPY ~RisenSoul/spl/ZKRSHA10.spl~ override
+    SAY 0x8 @23
+    SAY 0xc @23
+    SAY 0x54 @24
+    SAY 0x50 @24
+
+COPY ~RisenSoul/spl/ZKRSHA11.spl~ override
+    SAY 0x8 @25
+    SAY 0xc @25
+    SAY 0x54 @26
+    SAY 0x50 @26
+
+COPY ~RisenSoul/spl/ZKRSHA12.spl~ override
+    SAY 0x8 @27
+    SAY 0xc @27
+    SAY 0x54 @28
+    SAY 0x50 @28
+
+COPY ~RisenSoul/spl/ZKRSHA13.spl~ override
+    SAY 0x8 @29
+    SAY 0xc @29
+    SAY 0x54 @30
+    SAY 0x50 @30
+
+COPY ~RisenSoul/spl/ZKRSHA14.spl~ override
+    SAY 0x8 @31
+    SAY 0xc @31
+    SAY 0x54 @32
+    SAY 0x50 @32
+
+COPY ~RisenSoul/spl/ZKRSHA15.spl~ override
+    SAY 0x8 @33
+    SAY 0xc @33
+    SAY 0x54 @34
+    SAY 0x50 @34
+
+
+COPY ~RisenSoul/spl/ZKRSHA16.spl~ override
+    SAY 0x8 @35
+    SAY 0xc @35
+    SAY 0x54 @36
+    SAY 0x50 @36
+
+COPY ~RisenSoul/spl/ZKRSHA17.spl~ override
+    SAY 0x8 @37
+    SAY 0xc @37
+    SAY 0x54 @38
+    SAY 0x50 @38
+        
+COPY ~RisenSoul/spl/ZKRSHA18.spl~ override
+    SAY 0x8 @39
+    SAY 0xc @39
+    SAY 0x54 @40
+    SAY 0x50 @40
+
+COPY ~RisenSoul/spl/ZKRSH18A.spl~ override
+    SAY 0x8 @39
+    SAY 0xc @39
+    SAY 0x54 @40
+    SAY 0x50 @40
+COPY ~RisenSoul/spl/ZKRSH18A.EFF~ override
+
+COPY ~RisenSoul/spl/ZKRSHA19.spl~ override
+    SAY 0x8 @41
+    SAY 0xc @41
+    SAY 0x54 @42
+    SAY 0x50 @42
+
+COPY ~RisenSoul/spl/ZKRSHA20.spl~ override
+    SAY 0x8 @43
+    SAY 0xc @43
+    SAY 0x54 @44
+    SAY 0x50 @44
+
+COPY ~RisenSoul/spl/ZKRSHS.spl~ override
+    SAY 0x8 @45
+    SAY 0xc @45
+    SAY 0x54 @46
+    SAY 0x50 @46
+    FOR(l=1;l<=20;++l) BEGIN
+        SET delay = 10 - l/4
+        LPF ALTER_SPELL_HEADER
+            INT_VAR
+            header = l
+            target = 5
+            min_level = l
+            END
+            
+        PATCH_IF(l>=1) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS23~
+            END
+        END
+        PATCH_IF(l>=2) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS24~
+            END
+        END
+        PATCH_IF(l>=3) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 2 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS26~
+            END
+        END
+        PATCH_IF(l>=4) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS25~
+            END
+
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 2 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS27~
+            END
+        END
+        PATCH_IF(l>=5) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 3 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS28~
+            END
+        END
+        PATCH_IF(l>=6) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 3 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS29~
+            END
+        END
+        PATCH_IF(l>=7) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 4 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS30~
+            END
+        END
+        PATCH_IF(l>=8) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 4 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS31~
+            END
+        END
+        PATCH_IF(l>=9) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 5 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS32~
+            END
+        END
+        PATCH_IF(l>=10) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 5 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS33~
+            END
+        END
+        
+    END
+
+COPY ~RisenSoul/spl/ZKRSIB.spl~ override
+    SAY 0x8 @47
+    SAY 0xc @47
+    SAY 0x54 @48
+    SAY 0x50 @48
+    FOR(l=1;l<=20;++l) BEGIN
+        SET delay = 10 - l/4
+        LPF ALTER_SPELL_HEADER
+            INT_VAR
+            header = l
+            target = 5
+            min_level = l
+            END
+        PATCH_IF(l>=1) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS01~
+            END
+        END
+        PATCH_IF(l>=2) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS02~
+            END
+        END
+        PATCH_IF(l>=3) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 2 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS04~
+            END
+        END
+        PATCH_IF(l>=4) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS03~
+            END
+
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 2 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS05~
+            END
+        END
+        PATCH_IF(l>=5) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 3 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS06~
+            END
+        END
+        PATCH_IF(l>=6) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 3 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS07~
+            END
+        END
+        PATCH_IF(l>=7) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 4 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS08~
+            END
+        END
+        PATCH_IF(l>=8) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 4 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS09~
+            END
+        END
+        PATCH_IF(l>=9) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 5 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS10~
+            END
+        END
+        PATCH_IF(l>=10) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 5 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS11~
+            END
+        END
+        
+    END
+
+COPY ~RisenSoul/spl/ZKRSOS.spl~ override
+    SAY 0x8 @49
+    SAY 0xc @49
+    SAY 0x54 @50
+    SAY 0x50 @50
+    FOR(l=1;l<=20;++l) BEGIN
+        SET delay = 10 - l/4
+        LPF ALTER_SPELL_HEADER
+            INT_VAR
+            header = l
+            target = 5
+            min_level = l
+            END
+        PATCH_IF(l>=1) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS12~
+            END
+        END
+        PATCH_IF(l>=2) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS13~
+            END
+        END
+        PATCH_IF(l>=3) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 2 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS15~
+            END
+        END
+        PATCH_IF(l>=4) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 1 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS14~
+            END
+
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 2 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS16~
+            END
+        END
+        PATCH_IF(l>=5) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 3 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS17~
+            END
+        END
+        PATCH_IF(l>=6) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 3 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKR18~
+            END
+        END
+        PATCH_IF(l>=7) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 4 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS19~
+            END
+        END
+        PATCH_IF(l>=8) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 4 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS20~
+            END
+        END
+        PATCH_IF(l>=9) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 5 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS21~
+            END
+        END
+        PATCH_IF(l>=10) BEGIN
+            LPF ADD_SPELL_EFFECT
+            INT_VAR
+            header = l target = 2
+            opcode = 171
+            timing = 4
+            duration = 5 * delay
+            resist_dispel = 0
+            STR_VAR
+            resource = ~ZKRS22~
+            END
+        END
+        
+    END
+
+
+OUTER_SPRINT $spell_name("1") @51
+OUTER_SPRINT $spell_name("2") @52
+OUTER_SPRINT $spell_name("3") @53
+OUTER_SPRINT $spell_name("4") @54
+OUTER_SPRINT $spell_name("5") @55
+OUTER_SPRINT $spell_name("6") @56
+OUTER_SPRINT $spell_name("7") @57
+OUTER_SPRINT $spell_name("8") @58
+OUTER_SPRINT $spell_name("9") @59
+OUTER_SPRINT $spell_name("10") @60
+OUTER_SPRINT $spell_name("11") @61
+OUTER_SPRINT $spell_name("12") @62
+OUTER_SPRINT $spell_name("13") @63
+OUTER_SPRINT $spell_name("14") @64
+OUTER_SPRINT $spell_name("15") @65
+OUTER_SPRINT $spell_name("16") @66
+OUTER_SPRINT $spell_name("17") @67
+OUTER_SPRINT $spell_name("18") @68
+OUTER_SPRINT $spell_name("19") @69
+OUTER_SPRINT $spell_name("20") @70
+OUTER_SPRINT $spell_name("21") @71
+OUTER_SPRINT $spell_name("22") @72
+OUTER_SPRINT $spell_name("23") @73
+OUTER_SPRINT $spell_name("24") @74
+OUTER_SPRINT $spell_name("25") @75
+OUTER_SPRINT $spell_name("26") @76
+OUTER_SPRINT $spell_name("27") @77
+OUTER_SPRINT $spell_name("28") @78
+OUTER_SPRINT $spell_name("29") @79
+OUTER_SPRINT $spell_name("30") @80
+OUTER_SPRINT $spell_name("31") @81
+OUTER_SPRINT $spell_name("32") @82
+OUTER_SPRINT $spell_name("33") @83
+
+OUTER_SPRINT $spell_desc("1") @84
+OUTER_SPRINT $spell_desc("2") @85
+OUTER_SPRINT $spell_desc("3") @86
+OUTER_SPRINT $spell_desc("4") @87
+OUTER_SPRINT $spell_desc("5") @88
+OUTER_SPRINT $spell_desc("6") @89
+OUTER_SPRINT $spell_desc("7") @90
+OUTER_SPRINT $spell_desc("8") @91
+OUTER_SPRINT $spell_desc("9") @92
+OUTER_SPRINT $spell_desc("10") @93
+OUTER_SPRINT $spell_desc("11") @94
+OUTER_SPRINT $spell_desc("12") @95
+OUTER_SPRINT $spell_desc("13") @96
+OUTER_SPRINT $spell_desc("14") @97
+OUTER_SPRINT $spell_desc("15") @98
+OUTER_SPRINT $spell_desc("16") @99
+OUTER_SPRINT $spell_desc("17") @100
+OUTER_SPRINT $spell_desc("18") @101
+OUTER_SPRINT $spell_desc("19") @102
+OUTER_SPRINT $spell_desc("20") @103
+OUTER_SPRINT $spell_desc("21") @104
+OUTER_SPRINT $spell_desc("22") @105
+OUTER_SPRINT $spell_desc("23") @106
+OUTER_SPRINT $spell_desc("24") @107
+OUTER_SPRINT $spell_desc("25") @108
+OUTER_SPRINT $spell_desc("26") @109
+OUTER_SPRINT $spell_desc("27") @110
+OUTER_SPRINT $spell_desc("28") @111
+OUTER_SPRINT $spell_desc("29") @112
+OUTER_SPRINT $spell_desc("30") @113
+OUTER_SPRINT $spell_desc("31") @114
+OUTER_SPRINT $spell_desc("32") @115
+OUTER_SPRINT $spell_desc("33") @116
+
+    
+
+OUTER_FOR(l=1;l<=33;++l) BEGIN
+        ACTION_IF(l<10) BEGIN
+            OUTER_SPRINT spell_res @117
+        END
+        ACTION_IF(l>=10) BEGIN
+            OUTER_SPRINT spell_res @118
+        END
+        ACTION_IF(l=18) BEGIN
+            OUTER_SPRINT spell_res @119
+        END
+        COPY ~RisenSoul/spl/%spell_res%.spl~ override
+            SPRINT spell_name $spell_name("%l%")
+            SPRINT spell_desc $spell_desc("%l%")
+            SAY 0x8 @121
+            SAY 0xc @121
+            SAY 0x54 @122
+            SAY 0x50 @122
+        ACTION_IF(FILE_EXISTS ~RisenSoul/2da/L%spell_res%.2da~) BEGIN
+            LAF SCALE_SPELL_WITH_LEVEL INT_VAR SCALING_START_LEVEL = 2 MAX_LEVEL = 20 STR_VAR TABLE_PATH = ~RisenSoul/2da/L%spell_res%.2da~ SPELL_TO_PATCH = EVAL ~%spell_res%~ DESCRIPTION = ~+~ END
+        END
+        
+        ACTION_IF(FILE_EXISTS ~RisenSoul/2da/%spell_res%.2da~) BEGIN
+            LAF MULTI_SCALE_SPELL STR_VAR TABLE_PATH = ~RisenSoul/2da/%spell_res%.2da~ ORIGINAL_RESOURCE = EVAL ~%spell_res%~ NEW_RESOURCE_BASE = EVAL ~%spell_res%~ END
+        END
+
+        COPY ~override/%spell_res%.spl~ override
+            PATCH_IF(l<=9) BEGIN
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1
+                    STR_VAR resource = ZKRSIB
+                END
+            END
+        
+            PATCH_IF(l=10 OR l=11) BEGIN
+                //Remove all spells
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1
+                    STR_VAR resource = ZKRSIB
+                END
+                //Remove timed additions
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 321 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter1 = 0 timing = 4 duration = 1
+                    STR_VAR resource = ZKRSIB
+                END
+                //Re add spells after delay
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1 timing = 4 duration = 120
+                    STR_VAR resource = ZKRSIB
+                END
+            END
+
+            PATCH_IF(l<=20 AND l>=12) BEGIN
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1
+                    STR_VAR resource = ZKRSOS
+                END
+            END
+        
+            PATCH_IF(l=21 OR l=22) BEGIN
+                //Remove all spells
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1
+                    STR_VAR resource = ZKRSOS
+                END
+                //Remove timed additions
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 321 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter1 = 0 timing = 4 duration = 1
+                    STR_VAR resource = ZKRSOS
+                END
+                //Re add spells after delay
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1 timing = 4 duration = 120
+                    STR_VAR resource = ZKRSOS
+                END
+            END
+
+            PATCH_IF(l>=23 AND l<=31) BEGIN
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1
+                    STR_VAR resource = ZKRSHS
+                END
+            END
+        
+            PATCH_IF(l=32 OR l=33) BEGIN
+                //Remove all spells
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1
+                    STR_VAR resource = ZKRSHS
+                END
+                //Remove timed additions
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 321 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter1 = 0 timing = 4 duration = 1
+                    STR_VAR resource = ZKRSHS
+                END
+                //Re add spells after delay
+                LPF ADD_SPELL_EFFECT
+                    INT_VAR opcode = 146 target = 9 resist_dispel = 0 parameter2 = 0 power = 0 parameter2 = 1 timing = 4 duration = 120
+                    STR_VAR resource = ZKRSHS
+                END
+            END
+    
+
+END
+
+COPY ~RisenSoul/spl/ZKRS16A.spl~ override
+    SAY 0x8 #-1
+LAF SCALE_SPELL_WITH_LEVEL INT_VAR SCALING_START_LEVEL = 2 MAX_LEVEL = 40 STR_VAR TABLE_PATH = ~RisenSoul/2da/LZKRS16A.2da~ SPELL_TO_PATCH = ~ZKRS16A~ DESCRIPTION = ~+~ END
+
+COPY ~RisenSoul/spl/ZKRS16B.spl~ override
+    SAY 0x8 #-1
+LAF SCALE_SPELL_WITH_LEVEL INT_VAR SCALING_START_LEVEL = 2 MAX_LEVEL = 40 STR_VAR TABLE_PATH = ~RisenSoul/2da/LZKRS16B.2da~ SPELL_TO_PATCH = ~ZKRS16B~ DESCRIPTION = ~+~ END
+
+COPY ~RisenSoul/spl/ZKRS16C.spl~ override
+    SAY 0x8 #-1
+LAF SCALE_SPELL_WITH_LEVEL INT_VAR SCALING_START_LEVEL = 2 MAX_LEVEL = 40 STR_VAR TABLE_PATH = ~RisenSoul/2da/LZKRS16C.2da~ SPELL_TO_PATCH = ~ZKRS16C~ DESCRIPTION = ~+~ END
+
+COPY ~RisenSoul/spl/ZKRS21A.spl~ override
+    SAY 0x8 #-1
+LAF SCALE_SPELL_WITH_LEVEL INT_VAR SCALING_START_LEVEL = 2 MAX_LEVEL = 40 STR_VAR TABLE_PATH = ~RisenSoul/2da/LZKRS21A.2da~ SPELL_TO_PATCH = ~ZKRS21A~ DESCRIPTION = ~+~ END
+
+COPY ~RisenSoul/spl/ZKRS32A.spl~ override
+    SAY 0x8 #-1
+COPY ~RisenSoul/spl/ZKRS08A.spl~ override
+    SAY 0x8 #-1
+COPY ~RisenSoul/spl/ZKRS08.EFF~ override
+
+PRINT @123
+
+
+BEGIN @124
+SUBCOMPONENT @125
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS01~ NEW_SPELL_RES = ~ZKRT01~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS02~ NEW_SPELL_RES = ~ZKRT02~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS04~ NEW_SPELL_RES = ~ZKRT04~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS06~ NEW_SPELL_RES = ~ZKRT06~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS07~ NEW_SPELL_RES = ~ZKRT07~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS09~ NEW_SPELL_RES = ~ZKRT09~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS10~ NEW_SPELL_RES = ~ZKRT10~ DESCRIPTION = ~+~ END
+
+
+BEGIN @127
+SUBCOMPONENT @125
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS01~ NEW_SPELL_RES = ~ZKRT01~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS02~ NEW_SPELL_RES = ~ZKRT02~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS04~ NEW_SPELL_RES = ~ZKRT04~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS06~ NEW_SPELL_RES = ~ZKRT06~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS07~ NEW_SPELL_RES = ~ZKRT07~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS09~ NEW_SPELL_RES = ~ZKRT09~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS10~ NEW_SPELL_RES = ~ZKRT10~ DESCRIPTION = ~+~ END
+
+BEGIN @128
+SUBCOMPONENT @125
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS01~ NEW_SPELL_RES = ~ZKRT01~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS02~ NEW_SPELL_RES = ~ZKRT02~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS04~ NEW_SPELL_RES = ~ZKRT04~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS06~ NEW_SPELL_RES = ~ZKRT06~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS07~ NEW_SPELL_RES = ~ZKRT07~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS09~ NEW_SPELL_RES = ~ZKRT09~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS10~ NEW_SPELL_RES = ~ZKRT10~ DESCRIPTION = ~+~ END
+
+
+
+BEGIN @124
+SUBCOMPONENT @129
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS12~ NEW_SPELL_RES = ~ZKRT12~ DESCRIPTION = ~+~ END
+
+BEGIN @130
+SUBCOMPONENT @129
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS12~ NEW_SPELL_RES = ~ZKRT12~ DESCRIPTION = ~+~ END
+
+BEGIN @131
+SUBCOMPONENT @129
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS12~ NEW_SPELL_RES = ~ZKRT12~ DESCRIPTION = ~+~ END
+
+
+BEGIN @134
+SUBCOMPONENT @133
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+BEGIN @135
+SUBCOMPONENT @133
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+    COPY_EXISTING ~ZKR18.spl~ override
+        WRITE_BYTE 0x7e 4
+        
+    
+BEGIN @136
+SUBCOMPONENT @133
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKR18~ NEW_SPELL_RES = ~ZKT18~ DESCRIPTION = ~+~ END
+
+BEGIN @137
+SUBCOMPONENT @133
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKR18~ NEW_SPELL_RES = ~ZKT18~ DESCRIPTION = ~+~ END
+
+BEGIN @138
+SUBCOMPONENT @133
+    REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKR18~ NEW_SPELL_RES = ~ZKT18~ DESCRIPTION = ~+~ END
+
+
+
+BEGIN @124
+SUBCOMPONENT @132
+REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS29~ NEW_SPELL_RES = ~ZKRT29~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 0 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS30~ NEW_SPELL_RES = ~ZKRT30~ DESCRIPTION = ~+~ END
+
+BEGIN @130
+SUBCOMPONENT @132
+REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS29~ NEW_SPELL_RES = ~ZKRT29~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 2 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS30~ NEW_SPELL_RES = ~ZKRT30~ DESCRIPTION = ~+~ END
+
+BEGIN @131
+SUBCOMPONENT @132
+REQUIRE_COMPONENT "setup-RisenSoul.tp2" "0" @126 
+
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS29~ NEW_SPELL_RES = ~ZKRT29~ DESCRIPTION = ~+~ END
+LAF SPELL_HIT_CHECK INT_VAR BONUS_TO_APPLY = 4 WITH_FEEDBACK = 1 STR_VAR SPELL_TO_PATCH = ~ZKRS30~ NEW_SPELL_RES = ~ZKRT30~ DESCRIPTION = ~+~ END

@@ -1,0 +1,3 @@
+MIN_LEVEL MAX_LEVEL STEP_SIZE CHANGE_PER_STEP PARAMETER_TO_SCALE EFFECT_NUMBER
+4         40        4         -1              SAVING_THROW       1
+4         40        4         -1              SAVING_THROW       2

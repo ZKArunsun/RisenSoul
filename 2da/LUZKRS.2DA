@@ -1,0 +1,27 @@
+2DA V1.0
+*
+        ABILITY       ICON        STRREF    MIN_LEV   MAX_LEVEL  NUM_ALLOWED  PREREQUISITE EXCLUDED_BY   ALIGNMENT_RESTRICT
+1       AP_ZKRSHA01    *          *         1         99         1            *            AP_ZKRSHA11   *
+2       AP_ZKRSHA02    *          *         1         99         1            AP_ZKRSHA01   *             *
+3       AP_ZKRSHA03    *          *         1         99         1            AP_ZKRSHA02   *             *
+4       AP_ZKRSHA04    *          *         1         99         1            AP_ZKRSHA03   *             *
+5       AP_ZKRSHA05    *          *         1         99         1            AP_ZKRSHA04   *             *
+6       AP_ZKRSHA06    *          *         1         99         1            AP_ZKRSHA05   *             *
+7       AP_ZKRSHA07    *          *         1         99         1            AP_ZKRSHA06   *             *
+8       GA_ZKRSHA08    *          *         1         99         99           AP_ZKRSHA07   *             *
+9       AP_ZKRSHA09    *          *         1         99         1            GA_ZKRSHA08   *             *
+10	    AP_ZKRSHA10    *          *         1         99         1            AP_ZKRSHA09   *             *
+11      AP_ZKRSHA11    *          *         1         99         1            *            AP_ZKRSHA01   *
+12      AP_ZKRSHA12    *          *         1         99         1            AP_ZKRSHA11  *             *
+13      AP_ZKRSHA13    *          *         1         99         1            AP_ZKRSHA12  *             *
+14      AP_ZKRSHA14    *          *         1         99         1            AP_ZKRSHA13  *             *
+15      AP_ZKRSHA15    *          *         1         99         1            AP_ZKRSHA14  *             *
+16      AP_ZKRSHA16    *          *         1         99         1            AP_ZKRSHA15  *             *
+17      AP_ZKRSHA17    *          *         1         99         1            AP_ZKRSHA16  *             *
+18      GA_ZKRSHA18    *          *         1         99         99           AP_ZKRSHA17  *             *
+19      AP_ZKRSHA19    *          *         1         99         1            GA_ZKRSHA18  *             *
+20	    AP_ZKRSHA20    *          *         1         99         1            AP_ZKRSHA19  *             *
+21         *           *          *         *         *          *            *            *             *
+22         *           *          *         *         *          *            *            *             *
+23         *           *          *         *         *          *            *            *             *
+24         *           *          *         *         *          *            *            *             *
